@@ -3,7 +3,7 @@
 1. Please keep the branch open with pull request and merge to main once that is reviewed.
 2. Branch name should always in lowercase 
   Eg: Naming Convention - *feature-yandexwebiste* Can use *hyphen or slash*
-     IF it is a fix "fix/yandexwebiste"
+     * If it is a fix "fix/yandexwebiste"
 3. Delete the branch from remote and local once the branch is merged to master.
 4. Please rename the Tutorial4 & Tutorial5 filenames, follow the standards *index.html & style.css*
 5. You can make divide into *section tag* from next project onwards.
