@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana;
+    margin:0;
+}
+body {
+    background:#eee;
+}
+.wrapper {
+    width:100%;
+    max-width:960px;
+    margin: auto;
+}
+ /*menu base styles */
+nav {
+    background:white;
+}
+nav ul {
+    list-style-type:none;
+    padding:0;
+}
+
+nav a{
+    text-decoration:none;
+    text-align:center;
+    color:rgb(253, 29, 29);
+    display: block;
+    padding: 10px;
+    background-color: rgb(8, 206, 97);
+}
+nav a:hover{
+    background-color: rgb(128, 128, 128);
+}
+/* flex styles */
+@media screen and (min-width: 768px) { 
+nav ul {
+        display: flex;
+        justify-content:center;
+    }
+nav li {
+     flex: 1 1 0;
+    }
+}
