@@ -1,0 +1,33 @@
+*{
+    font-family: Verdana;
+    margin:0;
+}
+body {
+    background:#eee;
+}
+.wrapper {
+    width:100%;
+    max-width:960px;
+    margin: auto;
+}
+.flex-container{
+    display: flex;
+    background: white;
+}
+.box{
+    height: 100px;
+    min-width: 100px;
+    /* flex-grow: 2px;  */
+}
+.one {
+    background: red;
+    flex-grow: 1;
+}
+.two {
+    background: blueviolet;
+    flex-grow: 7;
+}
+.three {
+    background: yellow;
+    flex-grow: 3;
+}
