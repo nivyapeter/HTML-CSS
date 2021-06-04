@@ -1,0 +1,47 @@
+.wrapper {
+    background:gray;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+/* img {
+    float:right;
+    margin:10px;
+    flex-flow:row;
+} */
+/* .blue {
+    background: blue;
+    float: right;
+}
+.red{
+    background: red;
+    float:right;
+    margin:20px;
+}
+.green {
+    background: green;
+}
+.box {
+    height: 100px;
+    width:100px;
+}  */
+.service h2 .service p {
+    color: #999;
+    margin: 10px 0;
+    /* text-align: center; */
+}
+.service {
+    float:center;
+    background: #eee;
+    width: 29, 33%;
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+}
