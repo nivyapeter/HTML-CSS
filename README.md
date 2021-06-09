@@ -18,3 +18,12 @@ eg :
 6. Please refer to this document for further info : https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
 
 * Please put a title tag.
+
+* Can you update the vonnue status report as below.
+```
+Total hours: 8.5,
+HTML: 300,
+CSS: 200,
+LOC:500
+
+```
