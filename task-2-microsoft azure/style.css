@@ -1,0 +1,1253 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+    overflow-x:hidden;
+    
+}
+.main-top {
+    display:flex;
+    flex-direction:row;
+    /* justify-content: center; */
+    background-color: black;
+    height:60px;
+    
+
+}
+.logo a {
+    display: flex;
+    text-align: right;
+    color:white;
+    text-decoration: none;
+    align-items:stretch;
+    gap:.5rem;
+    padding-bottom:3rem;
+    justify-content:right;
+    /* margin-right:2px;
+    margin-left: 2\px; */
+}
+.logoimg{
+    display: flex;
+    flex-direction: row;
+    /* float:left; */
+    /* box-sizing: border-box; */
+    /* background: black; */
+    color: white;
+    padding-top:13px;
+    padding-left:1rem;
+    /* justify-content: flex-start; */
+    height:4vh;
+    width:25px;
+}
+main-nav{
+     background-color: whitesmoke; 
+    /* padding: 20px; */
+    display:flex;
+    flex-direction:row-reverse;
+    flex:0 0 100px;
+    position:relative;
+    /* top: 90px; */
+    justify-content: right;
+    margin-right:30px;
+}
+ .main-nav ul{
+    display: flex;
+    flex-direction: row;
+    float:right ;
+    align-items: center;
+    gap:2%;
+    width:79vw;
+    justify-content: right;
+    height:20px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+.main-nav a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: right;
+    
+}
+.main-nav a:hover {
+    background-color:blue;
+  }
+.contact a:hover {
+    background-color: black;
+}
+.contact a {
+    color:#b8b9ba;
+    font-size: 12px;
+    font-weight: 300;
+    height: 46px;
+    padding: 12px;
+    position: relative;
+    box-sizing: border-box;
+}
+.search-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:right;
+    /* gap: 1%; */
+    height: 4vh;
+    background: white;
+    
+
+
+}
+
+.input-container {
+    /* border: 3px solid #fc0; */
+    /* height: 40px; */
+    /* border-radius: 8px;
+    width: 40vw;
+    margin: 1px; */
+    display:flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    font-size: 14px;
+    width: 22em;
+    /* background-color: #e60b0b; */
+    border: 0;
+    padding: 6px;
+    /* padding: 0 1.125rem; */
+    overflow: hidden;
+    text-align: right;
+    background: white;
+    height:20px;
+
+
+}
+
+.input-container button {
+    /* display:flex; */
+    background-color:white;
+    /* height: 40px;
+    border: none;
+    padding: 1 1.125rem;
+    cursor: pointer;
+    width: 7%; */
+    transition: all .25s;
+    height: 20px;
+    margin-top: -5px;
+    vertical-align: baseline;
+    width: 41px;
+    display: inline-block;
+    /* height: 0; */
+    max-width: 100%;
+    text-align: right;
+    text-transform: none;
+    cursor: pointer;
+    border:none;
+
+}
+
+
+.input-container input {
+    height: 40px;
+    border: transparent;
+    width: 47.32vw;
+    padding: 0 1.125rem;
+    outline: none;
+    
+
+}
+
+.input-container img {
+    cursor: pointer;
+    padding: 0 1.125rem;
+    /* width:3rem; */
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: -3px;
+    width: 15px;
+}
+.banner-section {
+    display: block;
+    background-color: #0078d4;
+    /* color:white; */
+    padding-top:10px;
+    margin-top: 40px;
+    height:30vh;
+    text-align: center;
+    padding-bottom: 2rem;
+    height: 21px;
+    margin-top: 0px;
+    text-decoration: none;
+    padding: 12px 0;
+    text-align: center;
+    
+}
+.banner-section a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+    color:white;
+    text-decoration: none;
+    padding: 12px 0;
+    text-align: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.banner {
+    position: relative;
+    /* background-color: #0078d4; */
+    overflow: hidden;
+    height:110vh;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+.banner .welcome {
+    left: 0;
+    top: 5%;
+    /* color: white; */
+    padding: 30px;
+    position:absolute;
+}
+
+
+.banner h1 {
+    color: #0078d4;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 9px;
+    margin-top: 0px;
+    position: relative;
+    text-align: left;
+}
+.banner h2 {
+    color: #1a1a1f;
+    margin-bottom: 0;
+    font-size:54px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    text-align: left;
+    box-sizing: inherit;
+    font-family: 'Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+
+}
+.banner p {
+    color: #4c4c51;
+    /* text-indent: 50px; */
+    /* background-color: lightgrey; */
+    width: 51vw;
+    /* padding: 50px; */
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 9px;
+    box-sizing: inherit;
+    text-rendering: optimizeLegibility;
+}
+.banner .button-class {
+    margin-top:1rem;
+    background-color: #89c402;
+    color: #1a1a1f;
+    border: 1px solid #89c402;
+    border-radius: 4px;
+    color: #1a1a1f;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+}
+.button-class a:hover {
+    background-color:#9bdd02;
+}
+.flex-container{
+    display: flex;
+    background: white;
+}
+.box .one{
+    height: 10vh;
+    /* min-width: 100px; */
+    /* flex-grow: 20;
+    width:60vw;  */
+    /* background-position: 50% 50%;
+    background-repeat: no-repeat; */
+    background:white;
+    flex-grow: 1;
+    display: block;
+    padding: 60px 0;
+    width: 100%;
+    
+
+}
+.text-center {
+    color: #1a1a1f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    text-align: center;
+    width: 97vw;
+    margin-right:50px;
+    padding-top: 56px;
+    margin-bottom: 20px;
+}
+.content {
+    background-color: whitesmoke;
+    height:100%
+}
+.columns {
+    cursor: pointer;
+    padding: 24px 24px 24px 156px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color:white;
+    border-radius: 6px;
+    color: #4c4c51;
+    width: 30vw;
+    margin-left: 42px;
+    margin-top: 0px;
+    height: 21vh;
+    margin-top: 57px;
+    padding-bottom: 6px;
+    border:thin;
+
+}
+.columns :hover{
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.columns:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.column1 a:hover{
+    color: #002847;
+    text-decoration: underline;
+
+}
+.column1 a {
+    display: block;
+    background-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0062ad;
+    outline:0;
+}
+.column1 p{
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+    outline:0;
+}
+.column1 img {
+    display: flex;
+    width: 87px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    height: 25.5vh;
+    width: 133px;
+}
+.columns1 {
+    cursor: pointer;
+    padding: 24px 24px 24px 156px;
+    align-items: center;
+    display:block;
+    position: relative;
+    background-color:white;
+    border-radius: 6px;
+    color: #4c4c51;
+    width: 30vw;
+    margin-left: 43px;
+    margin-top: 0px;
+    height: 20vh;
+    margin-top: 57px;
+    padding-bottom: 6px;
+    border:thin;
+    align-items: center
+
+}
+.columns1 :hover{
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.14);
+    
+}
+.column2 a:hover{
+    color: #002847;
+    text-decoration: underline;
+
+}
+.columns1:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.column2 a {
+    /* display: block; */
+    background-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0062ad;
+}
+.column2 p{
+    /* display: block; */
+    margin: 12px 0;
+    cursor: pointer;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.column2 img {
+    /* display: flex; */
+    width: 87px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 24vh;
+    width: 129px;
+    border:none;
+}
+.columns2 {
+    cursor: pointer;
+    padding: 24px 24px 24px 156px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color:white;
+    border-radius: 6px;
+    color: #4c4c51;
+    width: 35vw;
+    margin-left: 60px;
+    margin-top: 0px;
+    height: 21vh;
+    margin-top: 57px;
+    padding-bottom: 6px;
+    border:thin;
+    align-items: center;
+    float:right;
+    top:-419px;
+    right:55px;
+    
+    
+    
+
+}
+.columns2 :hover{
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.column3 a:hover{
+    color: #002847;
+    text-decoration: underline;
+
+}
+.columns2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.column3 a {
+    display: block;
+    background-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0062ad;
+}
+.column3 p{
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.column3 img {
+    display: flex;
+    width: 87px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 26vh;
+    width: 135px;
+}
+.columns3 {
+    cursor: pointer;
+    padding: 24px 24px 24px 156px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color:white;
+    border-radius: 6px;
+    color: #4c4c51;
+    width: 34vw;
+    margin-left: 42px;
+    margin-top: 0px;
+    height: 20vh;
+    margin-top: 57px;
+    padding-bottom: 6px;
+    border:thin;
+    align-items: center;
+    float:right;
+    top: -417px;
+    right:60px;
+    box-shadow: white;
+    
+
+}
+.columns3 :hover{
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.column4 a:hover{
+    color: #002847;
+    text-decoration: underline;
+
+}
+.columns3:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.column4 a {
+    display: block;
+    background-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0062ad;
+}
+.column4 p{
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.column4 img {
+    display: flex;
+    width: 87px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 6px 0 0 6px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 25vh;
+    width: 131px;
+}
+/* .aside {
+    height:10vh;
+} */
+.row {
+    
+    float:inline-end;
+    margin-top: -170px;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1310px;
+    margin-left: 25px;
+    margin-right: auto;
+    
+}
+
+.div p {
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+    list-style-position: outside;
+    margin-right: 24px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    position: relative;
+}
+.row1 {
+    fill: #f8f9fa;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    display: block;
+    padding-right: 5px;
+    height:6vh;
+    width:10vw; 
+    justify-self: center;
+    padding-top:2px;
+    cursor:pointer;
+    text-align: center;
+}
+.row a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color:blue;
+   
+}
+.row :hover{
+    text-decoration:underline;
+    background-color:blue;
+    color:white;
+}
+.text {
+    color: #1a1a1f;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    /* margin: 0 0 12px; */
+    text-align: center;
+    width: 80vw;
+    margin-right:50px;
+    padding-top: 56px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 35px;
+    text-align: left;
+}
+.flex-container2 {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    display: block;
+    height: auto;
+    text-align: left;
+    background-color: whitesmoke;
+    margin-top:65px;
+}
+/* .flex-container2 p:hover{
+    color:blue;
+
+} */
+.box2{
+    height: 50px;
+    width: 16vw;
+    margin-left: 2rem;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.box2.one {
+    text-align: center;
+    padding-top: 3px;
+    color: #1a1a1f;
+    padding-left: 1rem;
+    /* background-color: blue; */
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    outline-offset: 2px;
+    -webkit-appearance: button;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: visible;
+    border-left-style: solid;
+    border-left-color:#0062ad;
+    text-align: left;
+    
+}
+.one  p:hover{
+    text-decoration: underline; 
+
+}
+.two p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .two{
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+}
+.two p{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1rem;
+}
+.two p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .three{
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+}
+.three p{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1rem;
+}
+.three p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .four {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+
+}
+.four p{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1rem;
+}
+.four p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .five {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+
+}
+.five p{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1rem;
+}
+.five p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .six {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    padding-left: 2rem;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+
+}
+.six p{
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1rem;
+}
+.six p:hover{
+    background-color: transparent;
+    color: #0062ad;
+    text-decoration: underline;
+}
+.box2 .seven {
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+    border-left: 4px solid transparent;
+    color: #4c4c51;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -3px;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-appearance: button;
+    appearance: button;
+    cursor: pointer;
+
+}
+.seven a {
+    cursor: pointer;
+    text-align: left;
+}
+.seven a:hover{
+    background-color: transparent;
+    color:#1a1a1f;
+    text-decoration: underline;
+}
+#blocks{
+    margin: 20px;
+    background-color:transparent;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    column-gap: 25px;
+    row-gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    color: #4c4c51;
+    width: 44vw;
+    top: 9px;
+    float: left;
+    height: 85vh;
+    margin-left: 282px;
+    margin-top: -453px;
+}
+
+.article1 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+}
+.article1 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article1 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article1 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article1 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article1 a:hover {
+    text-decoration: underline;
+    outline: 0;
+
+}
+.article2 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+}
+.article2 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article2 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article2 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article2 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article2 a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+.article3 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+}
+.article3 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article3 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article3 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article3 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article3 a:hover {
+    text-decoration: underline;
+    outline: 0;
+    
+}
+.article4 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+    top:5px;
+}
+.article4 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article4 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article4 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article4 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article4 a:hover {
+    text-decoration: underline;
+    outline: 0;
+    
+}
+.article5 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+}
+.article5 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article5 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article5 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article5 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article5 a:hover {
+    text-decoration: underline;
+    outline: 0;
+    
+}
+.article6 {
+    cursor: pointer;
+    background-color: white;
+    padding: 24px;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 6px;
+    width:14vw;
+    height:30vh;
+}
+.article6 :hover {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.article6 img {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left:43px;
+}
+.article6 p {
+    font-size: 16px;
+    margin: 24px 0;
+    color: #4c4c51;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+.article6 a {
+    color: #0062ad;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    cursor: pointer;
+}
+.article6 a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+.light-box{
+    width:100%;
+}
+.light-box .img1 {
+    max-height: 530px;
+    border-radius: 12px;
+    padding:2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,.14);
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+    background-color: black;
+    margin-top:-458px;
+    margin-left: 5px;
+    right:50px;
+    top:-416px;
+    float:right;
+    width:18vw;
+    height:78vh;
+    /* position: absolute; */
+  /* clip: rect(0, 100px, 200px, 0); */
+}
+.button-class1 {
+    margin-top:20px;
+    float:right;
+    left:50px;
+    fill:whitesmoke;
+    justify-content: space-between;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    padding: 0 12px 0 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    margin: 0;
+    background-color: transparent;
+    text-align: left;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.button-class1 .button-class1{
+    margin-top:18px;
+    left:21rem;
+}
+.button-class1 img{
+    margin-top:18px;
+    float:right;
+    
+}
+.next h2{
+    color: #1a1a1f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    text-align: center;
+    margin-top:101px;
+
+}
