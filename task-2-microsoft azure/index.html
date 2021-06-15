@@ -3,10 +3,13 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <!-- <body> -->
+    
     <div class=main-top>
         <div class=logo>
             <a href="https://azure.microsoft.com/en-us/">
@@ -15,7 +18,12 @@
 
             </a>
         </div>
-        <nav class="main-nav">
+         <nav>
+             <input type="checkbox" id="check">
+             <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>        
+                <nav class="main-nav">
             <ul>
                 <li class="contact"><a
                         href="https://azure.microsoft.com/en-us/overview/contact-azure-sales/join">contact sales</a>
@@ -33,7 +41,58 @@
             </ul>
         </nav>
     </div>
+            
     <nav class="nav-main">
+        <ul class="nav-main-links">
+            <li>
+                <a class="navigation-overview" href="https://azure.microsoft.com/en-us/overview/">Overview</a>
+            </li>
+            <li>
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">Solutions</a>
+            </li>
+            <li>
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">
+                  Products  <i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+            <li>
+                <a class="navigation-documentation" href="https://docs.microsoft.com/en-us/azure/">Documentation</a>
+            </li>
+            <li>
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">
+                  Pricing  <i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+            <li>
+                <a class="navigation-training" href="https://docs.microsoft.com/en-us/learn/azure/">Training</a>
+            </li>
+            <li>
+                <a class="navigation-marketplace" href="https://azure.microsoft.com/en-us/marketplace/">Marketplace</a>
+            </li>
+            <li>
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">
+                  Partners <i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+            <li>
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">
+                  Support <i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+            <li class="navigation-more">
+                <a class="navigation-solutions" href="https://azure.microsoft.com/en-us/solutions/">
+                  More  <i class="fa fa-angle-down"></i>
+                </a>
+            </li>
+        </ul>
+        <a class="header-button-primary" href="https://azure.microsoft.com/en-us/free/">
+          Free account 
+          <i class="fa fa-angle-right"></i>
+        </a>
+        </nav>
+        
+
+    <!-- <nav class="nav-main">
         <ul class="nav-main-links">
             <li>
                 <a class="navigation-overview" href="https://azure.microsoft.com/en-us/overview/">Overview</a>
@@ -72,8 +131,7 @@
 
         </ul>
         <a class="header-button-primary" href="https://azure.microsoft.com/en-us/free/">Free account</a>
-        
-
+       </nav> -->
     </nav>
 </head>
     <body>
@@ -446,20 +504,37 @@
        <div class="picture-text">
             <p>Developer Aadithyan Rajesh makes learning fun for his Gen Z peers on Tangled, the platform he co-created using Visual Studio Code and GitHub.</p>
         <!-- </div> -->
-            <div class="small-box"> 
+
+         <div class="card-2">
+             <ul class="list-link-horizondal">
+                 <li>
+                     <button class="button button--video sd-playinsection" title="Watch the story">Watch the story
+                         <span>(2.04)</span>
+                     </button>
+                 </li>
+                 <li>
+                     <a class="arrow-link" href="https://azure.microsoft.com/en-us/developer/stories/">Check out more inventor stories
+                    </a>
+                 </li>
+
+             </ul>
+         </div>    
+
+            <!-- <div class="small-box"> 
 
             <div class="picture-text1">
+                
                 <button class="button2" type="submit" role="button">
                     Watch the story (2:04)</button>
            </div> 
                <div class="picture-text2">
                 <a  href="https://azure.microsoft.com/en-us/developer/stories/">Check out more inventor stories</a> 
                 
-                 <!-- <p><span class="chevron right"></span>  -->
+                  <p><span class="chevron right"></span> 
                  
                  </div>
 
-            </div>
+            </div>  -->
         </div>  
      
 
