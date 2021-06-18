@@ -7,7 +7,9 @@ html,body {
     overflow-x:hidden;
     
 }
-
+* {
+    box-sizing: border-box;
+  }
 .nav-main{
     display: flex;
     flex-direction: row;
@@ -31,23 +33,125 @@ html,body {
   .nav-main-links li a :hover {
   text-decoration: underline;
   }
-
+  .nav-main-links li:hover{
+      background-color: grey;
+  }
   .header-button-primary{
     color:#89c402;
     text-decoration: none;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
   }
-.checkbtn {
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-    float:right;
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right:1rem;
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 25px;
+    height: 21px;
+}    
+.toggle-button .bar {
+    height:3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.flex-main {
     display: none;
 }
-#check{
-    display: none;
+
+/* mobile start */
+/* .flex-main{
+    display: flex;
+column-gap: 30px;
+row-gap: 24px;
+margin: 0;
+padding:0;
+
+flex-wrap:wrap;
+flex-direction: column;
 
 }
+.flex-main1 {
+    align-items: center;
+display: flex;
+padding: 24px 24px 24px 80px;
+position: relative;
+cursor:pointer;
+background-color: #fff;
+border-radius: 6px;
+box-shadow: 0 2px 5px rgba(0,0,0,.14);
+color: #4c4c51;
+}
+.flex-main-logo1{
+    display: flex;
+    background-image: url(/cvt-5f75879eb2f551b8d13497ce828d834f160ce21ca58fe451c2f77d5613cc0b55/images/page/home/join.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 6px 0 0 6px;
+bottom: 0;
+left: 0;
+position: absolute;
+top: 0;
+width: 68px;
+}
+.flex-main-heading {
+    margin-bottom: 0;
+width: 100%;
+}
+.flex-main-link{
+    text-decoration: none;
+    color: #0062ad;
+}
+.flex-main-link a {
+transition: color .15s ease-in-out;
+background-color: transparent;
+}
+.flex-main-logo2{
+    display: flex;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-e29dbf6b0086b183e039a1710b673fd2b451dd88225749f5db8965889e505e2c/images/page/home/develop.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 6px 0 0 6px;
+bottom: 0;
+left: 0;
+position: absolute;
+top: 0;
+width: 68px;
+}
+.flex-main-logo3{
+    display: flex;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-33e8571875321ba8fcf42b1c4c3e52102313a23fc6696bbdb155169710d18f36/images/page/home/discover.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 6px 0 0 6px;
+bottom: 0;
+left: 0;
+position: absolute;
+top: 0;
+width: 68px;
+}
+.flex-main-logo4{
+    display: flex;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-5a76daa982cbc85f43bcc163604838d5ea76115a5d41b0e43d8ee48c013407ef/images/page/home/build.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 6px 0 0 6px;
+bottom: 0;
+left: 0;
+position: absolute;
+top: 0;
+width: 68px;
+} */
+
+/* mobile-end */
 /* .nav-main {
     clear: both;
     display: flex;
@@ -209,6 +313,9 @@ text-align: center;
     position: relative;
     box-sizing: border-box;
 }
+.row .column {
+    display: none;
+}
 .search-container {
     width: 60%;
     display: flex;
@@ -328,14 +435,25 @@ text-align: center;
     overflow: hidden;
     height:110vh;
 }
-.banner img {
+.banner  {
     width: 100%;
     height: 100%;
-    /* background-image: url("https://azurecomcdn.azureedge.net/cvt-dfaaf3dce282a86b43644a1f24b431c4b353258f5c3ead74e89740e95d82a7e5/images/page/home/hero-desktop.jpg");
-    background-color: #cccccc; 
+     background-image: url("https://azurecomcdn.azureedge.net/cvt-dfaaf3dce282a86b43644a1f24b431c4b353258f5c3ead74e89740e95d82a7e5/images/page/home/hero-desktop.jpg");
+    /* background-color: #cccccc; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
+    padding: 72px 0 444px 0; */
+    text-align: center;
+padding: 72px 0 300px 0;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+color: #4c4c51;
+overflow: hidden;
+position: relative;
+height: 313px;
+width: 1374px;
 }
 .banner .welcome {
     left: 0;
@@ -373,7 +491,7 @@ text-align: center;
     color: #4c4c51;
     /* text-indent: 50px; */
     /* background-color: lightgrey; */
-    width: 51vw;
+    width: 54vw;
     /* padding: 50px; */
     margin: 20px;
     font-size: 18px;
@@ -382,6 +500,7 @@ text-align: center;
     margin: 0 0 9px;
     box-sizing: inherit;
     text-rendering: optimizeLegibility;
+    text-align: justify;
 }
 .banner .button-class {
     margin-top:1rem;
@@ -397,6 +516,7 @@ text-align: center;
     line-height: 1.5;
     text-align: center;
     cursor: pointer;
+    margin-left: -368px;
 }
 .button-class a:hover {
     background-color:#9bdd02;
@@ -438,6 +558,18 @@ text-align: center;
     max-width:100%; */
     height:237vh;
 }
+/* .flex{
+    display: flex;
+column-gap: 30px;
+row-gap: 24px;
+margin: 0;
+padding:0; 
+
+flex-wrap:wrap;
+flex-direction: row;
+
+
+}  */
 .columns {
     cursor: pointer;
     padding: 24px 24px 24px 156px;
@@ -541,7 +673,7 @@ text-align: center;
     clear: both;
 }
 .column2 a {
-    /* display: block; */
+    display: block;
     background-color:transparent;
     font-size: 20px;
     font-weight: 600;
@@ -551,7 +683,7 @@ text-align: center;
     color: #0062ad;
 }
 .column2 p{
-    /* display: block; */
+    display: block;
     margin: 12px 0;
     cursor: pointer;
     color: #4c4c51;
@@ -561,7 +693,7 @@ text-align: center;
     font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
 }
 .column2 img {
-    /* display: flex; */
+    display: flex;
     width: 87px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -719,7 +851,14 @@ text-align: center;
     top: 0;
     height: 25vh;
     width: 131px;
-}
+} 
+
+ .ro11 .column11 {
+     display:none;
+ }
+
+
+
 /* .aside {
     height:10vh;
 } */
@@ -1392,7 +1531,10 @@ text-align: center;
     background-color: white;
     
 } */
-.next-main .next h2{
+/* .background-pict {
+    display: none;
+} */
+.next-main1 .next h2{
     color: #1a1a1f;
     font-size: 24px;
     font-weight: 600;
@@ -2445,69 +2587,318 @@ ul .linklist-linklist-legal {
 
 
 @media screen and (max-width:568px) {
-    /* nav {
-        padding:0px 25px;
+    .logoimg {
+        height: 2vh
     }
-       .checkbtn {
-           display: block;
-       }
-       nav .logo p {
-           font-size: 10px;
-       }
-       nav ul {
-           width: 100%;
-           height: 20vh;
-       } */
-     .banner-section {
-        font-size: 13px;
-        padding-left: 10px;
-        height:37px;
+     .logo p {
+        font-size: 15px;
+        width: 20vw;
+        padding-top: 4px;
      }
+     .banner-section {
+        font-size: 11px;
+        padding-left: 10px;
+        height:33px;
+     }
+    .banner-section a {
+        font-size: 15px;
+    }
      .banner .welcome
     h1 {
          text-align: center;
          font-size: 16px;
         justify-content: center;
+        margin-top: -37px;
+         margin-left: -3px;
      }
      .banner .welcome h2 {
-        font-size: 38px;
-        font-size: 38px;
-        text-align:center;
-        font-size: 60px;
-        text-align: center;
+        font-size: 46px;
+text-align: center;
+width: 92vw;
+height: 79px;
+line-height:39px
+
      }
      .banner .welcome p {
-         display:block;
-         width:89vw;
-         text-align: center;
+        display: block;
+        width: 88vw;
+        text-align: center;
+        font-size: 17px;
 
      }
+     .banner .welcome .button-class {
+        width:139 px;
+        margin-left: -14px;
+        text-align: center;
 
-.banner img {
-    width: 198vw;
-height: 764px;
+     }
+.banner{
+    /* width: 100%; */
+    /* height: 100%; */
+    width:203vw;
+height: 30vh;
+padding: 72px 0 300px 0;
 }
-.banner .button-class{
-    width: 392px;
-top: 30px;
-text-align: center;
+.main-nav {
+    display:none;
+    width:100%;
 }
-.banner .welcome a {
-
-left: -8px;
-}
-.banner .welcome .button-class {
-    width: 360px;
-top: 30px;
-text-align: center;
-left: 29px;
-margin-left: 40px;
-}
-.banner img {
-
-}
-        }
+.nav-main{
+    display: none;
+    width: 100%;
     
+}
+.toggle-button{
+    display: flex;
+
+}
+.main-nav ul{
+    flex-direction: column;
+    align-items: flex-start;
+} 
+.nav-main  {
+    flex-direction: column;
+    align-items: center;
+   padding-top:55px;
+}
+.nav-main-links :hover{
+    width: 100%;
+}
+.nav-main  ul {
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding:0;
+}
+.nav-main  ul a :hover {
+    padding:0;
+    align-items:center;
+}
+.header-button-primary:hover{
+    width: 100%;
+    color:black;
+}
+.grid-section1{
+    grid-template-columns:none;
+    grid-template-rows:none;
+}
+.grid1 .grid1-description {
+    display: none;
+}
+.grid2 .grid2-description {
+    display: none;
+}
+.grid3 .grid3-description {
+    display: none;
+}
+.next-picture img {
+    display: block;
+    /* height: auto; */
+    max-width: 100%;
+}
+
+.flex {
+    display:none;
+}
+ .flex-main{
+    display: flex;
+column-gap: 30px;
+row-gap: 24px;
+margin: 0;
+padding:0;
+
+flex-wrap:wrap;
+flex-direction: column;
+
+}
+.card-v2--discover{
+    cursor:pointer;
+    align-items: center;
+display: flex;
+padding: 24px 24px 24px 80px;
+position: relative;
+margin:20px 20px 20px 20px;
+text-decoration: none;
+
+}
+.card-v2 .card-v2--discover .card-v2--hover{
+    width: 538px;
+height: 74px;
+padding: 0;
+}
+.card-v2--hover:hover {
+    transition: all .2s ease-in-out;
+box-shadow: 0 5px 10px rgba(0,0,0,.14);
+}
+.card-v2 {
+    background-color: #fff;
+border-radius: 6px;
+box-shadow: 0 2px 5px rgba(0,0,0,.14);
+color: #4c4c51;
+}
+.card-v2-logo .card-v2-logo--discover-join{
+    width: 68px;
+    height: 74px;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-5f75879eb2f551b8d13497ce828d834f160ce21ca58fe451c2f77d5613cc0b55/images/page/home/join.png);
+    background-size: cover;
+} 
+.card-v2-heading a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.card-v2--discover .card-v2-heading {
+    margin-bottom: 0;
+width: 100%;
+}
+.card-v2 .card-v2-link {
+    text-decoration: none;
+    color: #0062ad;
+
+}
+.card-v2-logo .card-v2-logo--discover-develop{
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-e29dbf6b0086b183e039a1710b673fd2b451dd88225749f5db8965889e505e2c/images/page/home/develop.png);
+    background-size: cover;
+    width: 68px;
+    height: 74px;
+}
+.card-v2 .card-v2--discover .card-v2-logo .card-v2-logo--discover-discover{
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-33e8571875321ba8fcf42b1c4c3e52102313a23fc6696bbdb155169710d18f36/images/page/home/discover.png);
+    background-size: cover;
+    width: 68px;
+    height: 74px;
+}
+.card-v2.card-v2--discover .card-v2-logo.card-v2-logo--discover-build{
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-5a76daa982cbc85f43bcc163604838d5ea76115a5d41b0e43d8ee48c013407ef/images/page/home/build.png);
+    background-size: cover;
+    width: 68px;
+    height: 74px;
+}  
 
 
- 
+
+.row {
+    display: none;
+}
+/* .row11::after {
+    clear: both;
+}
+.row11::before, .row11::after{
+    content: " ";
+display: table;
+} */
+
+ul .list--link-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 101px;
+}
+.list--link-horizontal li {
+    margin-right: 24px;
+margin-top: 12px;
+margin-bottom: 0;
+}
+.text--gray100 {
+    color: #1a1a1f !important;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.button.button--ghost {
+    background-color: transparent;
+border: 1px solid #0078d4;
+border-radius: 4px;
+color: #0062ad;
+display: inline-block;
+font-size: 14px;
+font-weight: 600;
+padding: 10px 16px;
+transition-property: background-color;
+margin-left: 25px;
+}
+.text {
+    font-size: 14px;
+width: 538px;
+height: 48px;
+text-align: center;
+margin-top: -32px;
+}
+.news {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 526px;
+    height:315.4;
+    margin: 4px, 4px;
+    padding: 4px;
+}
+.next-main{
+    margin-top: -257px;
+}
+.news-containers1 {
+    width: 526px;
+height: 314.4px;
+height: 315.4px;
+}
+.news {
+    display: flex;
+flex-direction: row;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+width: 526px;
+padding: 4px;
+/* background-color: green; */
+} 
+.news-container1 {
+    width:198.8px;
+    height:315.4px;
+}
+.next-picture{
+    margin-top: 320px;
+    
+}
+.news-container2 {
+    width:198.8px;
+    height:315.4px;
+}
+
+.next-picture  img{
+    width:568px;
+    height:437.45px;
+    position: relative;
+}
+/* .button.button--video  .span{
+    display: none;
+}
+    */
+
+.picture img {
+    width: 568px;
+    height: 428.483px;
+}
+.go {
+    margin-top: -560px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: -55px;
+}
+.picture1 img {
+    width: 407px;
+height: 356px;
+margin-left: -98px;
+margin-top: 245px;
+}
+.two-text{
+    margin-top: 14px;
+margin-left: 10px;
+}
+.two-text1{
+    margin-bottom: 0;
+}
+.two-text2{
+    width: 311.933px;
+height: 43px;
+}
+}
