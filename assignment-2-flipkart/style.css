@@ -658,16 +658,16 @@ white-space: nowrap;
 .question {
     border-radius: 50%;
     background-color: #fff;
-    color: #878787;
+    color: #0e0d0d;
     font-weight: 500;
-    width: 16px;
+    /* width: 16px; */
     height: 16px;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 16px;
     text-align: center;
     display: inline-block;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+    /* border: 1px solid #e0e0e0; */
+    /* box-shadow: 0 0 1px 0 rgba(0,0,0,.2); */
     vertical-align: middle;
     margin: 0 2px 0 8px;
     cursor: pointer;
@@ -1458,7 +1458,7 @@ a {
     background-color: #fff;
     font-size: 14px;
     padding: 18px;
-    border-top: 2px solid #e0e0e0;
+    /* border-top: 2px solid #e0e0e0; */
     display: flex;
     margin-top: 1%;
     flex-direction: row;
@@ -1479,15 +1479,22 @@ a {
     margin-right: 8px;
     font-weight: 500;
 }
+
 .footer1 {
     display:flex;
     flex-flow:row wrap;
-    margin-left: 65px;
-    width: 90% !important;
+    /* margin-left: 65px; */
+    width: 100% !important;
     padding-top: 40px;
+    background-color:#172337;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
 }
 .footer-1a {
     flex:1;
+    margin-left: 65px;
 }
 .footer-heading {
     color: #878787;
@@ -1495,7 +1502,46 @@ a {
     font-weight: 400;
     margin-bottom: 9px;
 }
+.sub-heading {
+    line-height:2;
+    color:#fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.footer-next {
+    font-size: 12px;
+    white-space: nowrap;
+    border-left: 1px solid #454d5e;
+    padding: 0 25px;
+}
+.footer-mail {
+    font-style: normal;
+    color: #fff;
+    background-color: #172337;
+}
+.footer-mail-part {
+    background-color: #fff;
+    font-size: 12px;
+}
+.footer-mail-part .footer-mail-section {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+.footer-address {
+    margin-bottom: 10px;
+    padding-left: 14px;
+    margin-left:-51%;
+}
+.footer-mail p {
+    margin-bottom: 0;
+}
+.footer-mail a{
+color:#2874f0;
+}
 
+    
 @media screen and (max-width: 568px) {
    .search-products {
        display:none;
