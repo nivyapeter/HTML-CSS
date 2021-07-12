@@ -14,6 +14,7 @@ html {
 }
 body {
   color:#333;
+  overflow: hidden;
 }
 .home-page {
   background-image:url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/eea3522f4348/assets/img/home/hero_photos/BWRT755ImlKnGpjV4udRdQ.jpg);
@@ -2132,23 +2133,54 @@ display: none;
 .food-wrap1{
   display: flex;
   flex-direction: row;
+  font-size: 11px;
+  margin-left:10px;
 }
+.food-wrap-card {
+  border:none;
+}
+.photo-box-ground{
+border-radius: 4px;
+margin-left:24px;
+}
+.photo-box-ground1{
+  border-radius: 4px;
+  margin-left:24px;
+  }
+  .photo-box-ground2{
+    border-radius: 4px;
+    margin-left:24px;
+    }
 .food-wrap2{
   display: flex;
   flex-direction: row;
+  font-size: 11px;
+  margin-left:10px;
 }
 .food-wrap3{
   display: flex;
   flex-direction: row;
+  font-size: 11px;
+  margin-left:10px;
 }
 .photo-box-ground {
   width: 60px;
   height: 60px;
 }
 .card-body {
-  margin-top: -116%;
-  margin-left: 35%;
+  margin-top: -112%;
+  margin-left: 55%;
   width: 46vw;
+
+}
+.card-content {
+  font-size:7px;
+}
+.biz-rating {
+  padding-left: 5px;
+}
+.price-category{
+  padding-left: 5px;
 }
 .photo-box-ground1 {
   width: 60px;
@@ -2159,14 +2191,16 @@ display: none;
   height: 60px;
 }
 .food-wrap2{
-  margin-left:16%;
+  /* margin-left:16%; */
   display: flex;
   flex-direction: row;
 }
 .food-wrap3{
-  margin-left:16%;
+  /* margin-left:16%; */
   display: flex;
   flex-direction: row;
 }
-
+.food-wrap-photo {
+  border:none
+}
 }
