@@ -1,0 +1,12 @@
+.navbar .nav-link {
+  font-size:14px;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav .nav-item.active {
+  border-left:#444 3px solid;
+}
+.nav-item a {
+  color:white;
+}
