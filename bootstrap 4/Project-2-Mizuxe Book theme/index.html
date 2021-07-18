@@ -25,9 +25,9 @@
     <title>Bootstrap Theme</title>
     
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target="main-nav">
     <!--navbar  -->
-    <nav class="navbar navbar-expand-sm bg-white nav-bar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-white nav-bar-dark fixed-top" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="img/mlogo.png" width="50" height="50" alt="logo-img">
@@ -373,7 +373,7 @@
           <div class="input-group input-group-lg mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
-                <i class="fas fas-envelope-open-o"></i>
+                <i class="fas fas-envelope"></i>
               </span>
             </div>
             <input type="text" class="form-control" placeholder="E-mail">
@@ -389,24 +389,26 @@
           <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
         </form>
           </div>
+          <div class="col-lg-3 align-self-center">
+            <img src="img/mlogo.png" class="img-fluid" alt="">
+          </div>
       </div>
     </div>
   </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script
+  <!-- footer -->
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="lead">
+            Copyright &copy;
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
@@ -423,5 +425,10 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
-    <script></script>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+      // Init scrollspy
+      $('body').scrollspy({target:'#main-nav'});
+    </script>
   </body>
