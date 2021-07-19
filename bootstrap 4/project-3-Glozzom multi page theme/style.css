@@ -42,3 +42,18 @@
   height: 100%;
   background: rgba(0,0,0,0.7);
 }
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url(glozzom/img/media.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0-300px;
+  text-align: center;
+  color: white;
+  fill:white;
+}
+#video-play a .fas {
+  color:#fff;
+  fill:white;
+}
